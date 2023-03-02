@@ -1,0 +1,23 @@
+This is an explanation of the issue highlighted in the categorizeDemo scipt. 
+
+In short, the categorize feature is not consistently reproducing the species as being in the groups selected. 
+
+I have included a copy of the non-categorized tree (demonstrating the correct foreground) and the categorized tree I used. They are both loaded in, and plotted by the script. 
+The expected result of this is that the foreground bats display as category 1; and the mongoose, Chinesepangolin, and Sunda pangolin display as category 2. Species in niether of these groups should remain background. 
+
+Fowever, these categories are not being correctly produced. 
+
+The issue can be seen to a lesser degree in the KIA0825 gene where a few background bats are highlighted as foreground, eg. Rousette fruit bat. It is much more obvious in the ZNF292 gene, where some entire unrelated species (eg. Yak) are considered as part of category 1 foreground, and some species are considered a part of a 3 category (eg. leaf-chinned bat). 
+
+Also attached is an image of the colored selection used to create the pre-made tree, as that can be easier to read than the saved branch lengths plotted by the code. 
+
+
+
+
+
+
+As a separate issue, this code produces this error if I try to provide it with a tree that was annotated to produce three categories. 
+> plotRers(CNRers,"KIAA0825", functionPaths, sortrers = T)
+Error in `f()`:
+! Insufficient values in manual scale. 5 needed but only 4 provided.
+Run `rlang::last_error()` to see where the error occurred.

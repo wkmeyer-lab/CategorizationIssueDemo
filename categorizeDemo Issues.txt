@@ -9,7 +9,7 @@ Fowever, these categories are not being correctly produced.
 
 The issue can be seen to a lesser degree in the KIA0825 gene where a few background bats are highlighted as foreground, eg. Rousette fruit bat. It is much more obvious in the ZNF292 gene, where some entire unrelated species (eg. Yak) are considered as part of category 1 foreground, and some species are considered a part of a 3 category (eg. leaf-chinned bat). 
 
-Also attached is an image of the colored selection used to create the pre-made tree, as that can be easier to read than the saved branch lengths plotted by the code. 
+Also included (in Docs folder) is an image of the colored selection used to create the pre-made tree, as that can be easier to read than the saved branch lengths plotted by the code. 
 
 
 

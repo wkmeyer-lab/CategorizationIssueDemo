@@ -5,7 +5,7 @@
 
 
 #Usage: 
-#Provide the function with he binary tree of interest, the pre-loaded object of the full zoonomia dataset, and a prefix to use when saving the tree. 
+#Provide the function with the binary tree of interest, the pre-loaded object of the full zoonomia dataset, and a prefix to use when saving the tree. 
 
 
 categorizePaths = function(binaryPhenotypeTree, zonomMasterObject, prefix, overwrite = F){

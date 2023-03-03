@@ -19,11 +19,13 @@ bats = grep("bat", names(CNNames))
 
 #Read in the binary tree (no paths)
 binaryTree = readRDS("Results/allInsectivoryBinaryForegroundTree.rds")
+plotTree(binaryTree)
 ZoonomTreeNameToCommon(binaryTree) #Plots the binary tree with common names displayed 
 
-#This code loads in the premade tree, with the manual annotations I used. 
+#This code loads in the premade tree, with the foreground click-selection I used; see Docs/ for image of click-selection. 
 premadeCategoricalTree = readRDS("Results/premadefunctionPathManualFGTree.rds")
 plotTree(premadeCategoricalTree)
+ZoonomTreeNameToCommon(premadeCategoricalTree, isForegroundTree = F) #Plots the tree with common names displayed 
 
 #Convert the categorical tree to a path
 #premadeCategoricalPaths = tree2Paths(readRDS("Results/premadefunctionPathManualFGTree.rds"), zonomMaster) #This has been pre-executed, to remove dependency on the zoonomia dataset file. Result is read in below. 

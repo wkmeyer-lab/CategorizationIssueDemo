@@ -12,7 +12,7 @@ The issue can be seen to a lesser degree in the KIA0825 gene where a few backgro
 Also included (in Docs folder) is an image of the colored selection used to create the pre-made tree, as that can be easier to read than the saved branch lengths plotted by the code. 
 
 
-
+Google drive link to the optional zoonomia data set: https://drive.google.com/file/d/1mHApg2BxOGwaCmbRyeIUzX3uhKqIolAV/view?usp=sharing
 
 
 

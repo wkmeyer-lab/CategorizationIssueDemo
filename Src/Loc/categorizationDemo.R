@@ -25,7 +25,7 @@ premadeCategoricalTreeCN = ZoonomTreeNameToCommon(premadeCategoricalTree, isFore
 category1Edges = which(premadeCategoricalTreeCN$edge.length == 2)
 category2Edges = which(premadeCategoricalTreeCN$edge.length == 3)
 hlColors = NA
-hlColors[1:length(category1Edges)] = "blue"
+hlColors[1:length(category1Edges)] = "red"
 hlColors[(length(category1Edges)+1):(length(category1Edges)+length(category2Edges))] = "green"
 } # collapsed code for making branch colors 
 plotTreeHighlightBranches(premadeCategoricalTreeCN, hlspecies = c(category1Edges, category2Edges), hlcols = hlColors)
@@ -50,7 +50,7 @@ plotRers(CNRers,"KIAA0825", premadeCategoricalPaths, sortrers = T) #Using catego
 
 # --- OPTIONAL: TO GENERATE A NEW CATEGORICAL PATH USING CLICK-SELECT
 #Read in the zoonomia master file. Ensure that this file is stored in the "Data" directory
-#It is very large, and thus is not included in the Github! 
+#It is very large, and thus is not included in the Github!Link in the main text doc. 
 zonomMaster = readRDS("Data/RemadeTreesAllZoonomiaSpecies.rds")
 
 #This line runs the manual selection 

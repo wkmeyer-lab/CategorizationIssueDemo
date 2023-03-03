@@ -2,6 +2,7 @@ library(RERconverge)
 source("Src/Reu/ZonomNameConvertMatrixCommon.R")
 source("Src/Reu/ZonomNameConvertVector.R")
 source("Src/Reu/categorizePaths.R")
+source("Src/Reu/ZoonomTreeNameToCommon.R")
 
 #Read in the correlation file, RERs, and Paths produced by the original run RERs step 
 allInsectivoryData = read.csv("Results/allInsectivoryCorrelationFile.csv")
@@ -18,7 +19,7 @@ bats = grep("bat", names(CNNames))
 
 #Read in the binary tree (no paths)
 binaryTree = readRDS("Results/allInsectivoryBinaryForegroundTree.rds")
-plotTree(binaryTree)
+ZoonomTreeNameToCommon(binaryTree) #Plots the binary tree with common names displayed 
 
 #This code loads in the premade tree, with the manual annotations I used. 
 premadeCategoricalTree = readRDS("Results/premadefunctionPathManualFGTree.rds")

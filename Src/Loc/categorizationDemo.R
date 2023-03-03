@@ -11,12 +11,6 @@ Paths = readRDS("Results/allInsectivoryPathsFile.rds") #Note that this path is u
 
 CNRers = ZonomNameConvertMatrixCommon(RERs) #convert the dataset names to common names
 
-#Find indexes with "bat" in the species name 
-CNNames = CNRers[1,]
-names(CNNames)
-bats = grep("bat", names(CNNames))
-
-
 #Read in the binary tree (no paths)
 binaryTree = readRDS("Results/allInsectivoryBinaryForegroundTree.rds")
 plotTree(binaryTree)

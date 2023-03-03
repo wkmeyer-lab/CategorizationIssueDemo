@@ -31,7 +31,7 @@ plotRers(CNRers,"KIAA0825", premadeCategoricalPaths, sortrers = T)
 
 
 plotRers(CNRers,"ZNF292", Paths, sortrers = T)
-plotRers(CNRers,"ZNF292", premadeCategoricalPaths, sortrers = T) #Note incorrect sorting, 4th category, yak in foreground
+plotRers(CNRers,"ZNF292", premadeCategoricalPaths, sortrers = T) #Note incorrect classification, 4th category, yak in foreground
 
 
 

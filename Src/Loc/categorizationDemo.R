@@ -34,7 +34,9 @@ plotRers(CNRers,"KIAA0825", premadeCategoricalPaths, sortrers = T)
 
 
 plotRers(CNRers,"ZNF292", Paths, sortrers = T)
-plotRers(CNRers,"ZNF292", premadeCategoricalPaths, sortrers = T)
+plotRers(CNRers,"ZNF292", premadeCategoricalPaths, sortrers = T) #Note incorrect sorting, 4th category, yak in foreground
+
+
 
 # --- OPTIONAL: TO GENERATE A NEW CATEGORICAL PATH 
 #Read in the zoonomia master file. Ensure that this file is stored in the "Data" directory

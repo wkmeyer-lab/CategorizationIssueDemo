@@ -1,5 +1,13 @@
+#Purpose: 
+#This function is a wrapper on <click_select_foreground_branches>.
+#All it does is allowing the user to see species common names during click selection. 
+#The main demo file is located in Src/Loc/categorizationDemo.R
+
+
 #Usage: 
 #Provide the function with he binary tree of interest, the pre-loaded object of the full zoonomia dataset, and a prefix to use when saving the tree. 
+
+
 categorizePaths = function(binaryPhenotypeTree, zonomMasterObject, prefix, overwrite = F){
   filename = paste("Results/", prefix, "ManualFGTree.rds", sep='') #use prefix argument to generate filename
   message(filename)                                                #Send the filename 

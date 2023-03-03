@@ -1,7 +1,7 @@
 #Purpose: 
 #This function is a wrapper on <click_select_foreground_branches>.
-#All it does is allowing the user to see species common names during click selection. 
-#The main demo file is located in Src/Loc/categorizationDemo.R
+#All it does is allow the user to see species common names during click selection. 
+#The main demo file is located at Src/Loc/categorizationDemo.R
 
 
 #Usage: 
